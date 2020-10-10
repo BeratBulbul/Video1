@@ -6,7 +6,7 @@ var prefix = ayarlar.prefix;
 exports.run = (client, message, params) => {
   const embedyardim = new Discord.RichEmbed()
   .setTitle("Yetkili Yardım Menüsü")
-  .setDescription('**MaximusBoys Yardım Komutları**')
+  .setDescription('**Yardım Komutları**')
   .setColor("RANDOM")
   .addField("**!istatistik **" , ":tada: **Botun İstatistiğini Gösterir!** :tada:")
   .addField("**!rol-bilgi [rol etiketi]**", ":tada: **Etiketlediğiniz Rolün İstatistiklerine Bakarsınız** :tada:",)
@@ -22,7 +22,7 @@ exports.run = (client, message, params) => {
   .addField("**!ping**", ":tada: **Botun Pingini Gösterir!** :tada:",)
   .setFooter('**--------------------------**')
   .setFooter('!davet Yazarak Botumuzu Ekleyebilirsiniz!')
-  .addField("**Developers**", " **Asreaper** ",)
+  .addField("**Developers**", " **r** ",)
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
     const longest = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
